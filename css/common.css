@@ -537,7 +537,6 @@ main section.content .inner .btn_red_site a {
     height: 80px;
     text-decoration: none;
     background: #be3d30;
-    background-size: 20px 15px;
     overflow: hidden;
     position: relative;
 }
@@ -555,7 +554,6 @@ main section.content .inner .btn_green_site a {
     height: 80px;
     text-decoration: none;
     background: #afc43a;
-    background-size: 20px 15px;
     overflow: hidden;
     position: relative;
 }
