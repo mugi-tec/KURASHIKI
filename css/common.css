@@ -1,0 +1,702 @@
+@charset "UTF-8";
+
+/* CSS Information
+---------------------------------------------------------------
+Site URL:http://kurashiki.me/
+File name:common.css
+Summary:base styles
+Created:2020-10-23
+Last update:2020-10-23 by Sadaoka
+Author:	Sadaoka(BUNKASOZOSHA Co.,Ltd.)
+Copyright:(C) BUNKASOZOSHA Co.,Ltd.
+--------------------------------------------------------------- */
+
+@media screen and (min-width: 981px) {
+
+/* Link */
+/* ------------------------------------------------------------ */
+
+a:link,
+a:visited {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover,
+a:active {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.alpha {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.alpha:hover {
+    filter: alpha(opacity=70);
+    opacity: 0.7;
+}
+
+/* Font */
+/* ------------------------------------------------------------ */
+
+em {
+    background-color: #f00;
+    font-style: normal;
+}
+
+sup {
+    font-size: 66%;
+    vertical-align: top;
+}
+
+sub {
+    font-size: 66%;
+    vertical-align: baseline;
+}
+
+/* インデント1文字分 */
+/* ------------------------------------------------------------ */
+
+.indent {
+    text-indent: -1em;
+    margin-left: 1em;
+}
+
+/* Align */
+/* ------------------------------------------------------------ */
+
+.a_left {
+    text-align: left !important;
+}
+
+.a_center {
+    text-align: center !important;
+}
+
+.a_right {
+    text-align: right !important;
+}
+
+/* Float */
+/* ------------------------------------------------------------ */
+
+.f_left {
+    float: left;
+}
+
+.f_right {
+    float: right;
+}
+
+/* Clear */
+/* ------------------------------------------------------------ */
+
+.clfx:after {
+    content: '';
+    height: 0;
+    clear: both;
+    display: block;
+    visibility: hidden;
+}
+
+/* HR */
+/* ------------------------------------------------------------ */
+
+hr {
+    height: 1px;
+    margin: 60px 0;
+    padding: 0;
+    display: block;
+    border: 0;
+    border-top: 1px #e6e6e6 solid;
+}
+
+/* Center合わせ */
+/* ------------------------------------------------------------ */
+
+.c_mgn {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* pc_mode / sp_mode */
+/* ------------------------------------------------------------ */
+
+.pc_mode {
+    display: inline !important;
+}
+
+.sp_mode {
+    display: none;
+}
+
+/* Header */
+/* ------------------------------------------------------------ */
+
+header section.mainvisual {
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../images/mainvisual.jpg);
+}
+
+header section.mainvisual .inner {
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+}
+
+header section.mainvisual h1 {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin: 30px 0 0 30px;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    text-shadow: 0px 0px 4px #000;
+}
+
+header section.mainvisual .logo {
+    text-align: center;
+    padding: 40vh 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+}
+
+header section.mainvisual .logo img {
+    width: auto;
+    height: 20vh;
+    filter: drop-shadow(0 0 4px #000);
+}
+
+header section.mainvisual .icon {
+    text-align: center;
+    position: absolute;
+    right: 0;
+    bottom: 30px;
+    left: 0;
+    z-index: 2;
+}
+
+header section.mainvisual .icon img {
+    width: 30px;
+    height: 66px;
+    filter: drop-shadow(0 0 4px #000);
+}
+
+header section.mainvisual .animation {
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 1s;
+}
+
+header section.mainvisual .keyframe {
+    animation-name: anim_v;
+}
+
+@keyframes anim_v {
+    0% {
+        transform: translate(0, 0px);
+    }
+    100% {
+        transform: translate(0, -20px);
+    }
+}
+
+header section.content {
+    width: 980px;
+    margin: 0 auto;
+}
+
+header section.content .inner {
+    text-align: center;
+    padding: 120px 0;
+}
+
+header section.content .inner h3 {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    display: inline-block;
+}
+
+header section.content .inner h3 span {
+    font-size: 32px;
+    font-weight: 600;
+    position: relative;
+    display: block;
+    padding: 30px 0;
+}
+
+header section.content .inner h3 span::after {
+    content: "";
+    background: #000;
+    height: 1px;
+    width: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+header section.content .inner .map {
+    margin: 60px auto 0;
+}
+
+header section.content .inner .map .imgright {
+    float: right;
+    margin: 0 0 30px 30px;
+}
+
+header section.content .inner .map .comment {
+    text-align: left;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.2em;
+}
+
+/* Main */
+/* ------------------------------------------------------------ */
+
+main section.parallax {
+    height: 480px !important;
+    position: relative;
+    overflow: hidden;
+}
+
+main section.parallax .background {
+    position: absolute;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main section.parallax .bg01 {
+    background-image: url(../images/title_bg_shopping.jpg);
+}
+
+main section.parallax .bg02 {
+    background-image: url(../images/title_bg_cafe.jpg);
+}
+
+main section.parallax .bg03 {
+    background-image: url(../images/title_bg_gourmet.jpg);
+}
+
+main section.parallax .bg04 {
+    background-image: url(../images/title_bg_tourist.jpg);
+}
+
+main section.parallax .bg05 {
+    background-image: url(../images/title_bg_masterpiece.jpg);
+}
+
+main section.parallax .inner {
+    width: 980px;
+    margin: 0 auto;
+    position: relative;
+    height: 480px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main section.parallax .inner h2 {
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: 0.03em;
+    text-shadow: 0px 0px 4px #000;
+}
+
+main section.parallax .inner h2 span {
+    font-size: 32px;
+    font-weight: 600;
+    position: relative;
+    display: block;
+    padding: 30px 0;
+}
+
+main section.parallax .inner h2 span::after {
+    content: "";
+    background: #fff;
+    height: 1px;
+    width: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    filter: drop-shadow(0 0 4px #000);
+}
+
+main section.parallax .inner .catchphrase {
+    -webkit-writing-mode: vertical-rl;
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+    position: absolute;
+    top: 0;
+}
+
+main section.parallax .inner .catchphrase_left {
+    left: 0;
+}
+
+main section.parallax .inner .catchphrase_right {
+    right: 0;
+}
+
+main section.parallax .inner .catchphrase span {
+    background-color: #ecedf1;
+    font-size: 24px;
+    letter-spacing: 0.1em;
+    margin: 0 10px -0.1em;
+    padding: 20px 15px;
+    display: inline-block;
+}
+
+main section.content {
+    width: 980px;
+    margin: 0 auto;
+    padding: 120px 0;
+}
+
+main section.content .inner {
+    text-align: center;
+}
+
+main section.content .inner h3 {
+    width: 200px;
+    margin: 0 auto 0;
+}
+
+main section.content .inner h3 img {
+    width: 100%;
+    height: auto;
+}
+
+main section.content .inner ul {
+    margin: 20px auto 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+main section.content .inner ul li {
+    text-align: center;
+    width: 300px;
+    margin: 40px 0 0;
+}
+
+main section.content .inner ul li h4 {
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    margin: 10px auto;
+}
+
+main section.content .inner ul li .comment {
+    text-align: center;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    margin: 10px auto;
+}
+
+main section.content .inner ul li .btn_red a:before,
+main section.content .inner ul li .btn_red a:after,
+main section.content .inner ul li .btn_green a:before,
+main section.content .inner ul li .btn_green a:after {
+    box-sizing: border-box;
+    -webkit-transition: 0.5s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+
+main section.content .inner ul li .btn_red a {
+    display: flex;
+    /* 子要素をflexboxで揃える */
+    flex-direction: column;
+    /* 子要素をflexboxにより縦方向に揃える */
+    justify-content: center;
+    /* 子要素をflexboxにより中央に配置する */
+    align-items: center;
+    /* 子要素をflexboxにより中央に配置する */
+    width: 300px;
+    height: 40px;
+    text-decoration: none;
+    background: #be3d30;
+    overflow: hidden;
+    position: relative;
+}
+
+main section.content .inner ul li .btn_green a {
+    display: flex;
+    /* 子要素をflexboxで揃える */
+    flex-direction: column;
+    /* 子要素をflexboxにより縦方向に揃える */
+    justify-content: center;
+    /* 子要素をflexboxにより中央に配置する */
+    align-items: center;
+    /* 子要素をflexboxにより中央に配置する */
+    width: 300px;
+    height: 40px;
+    text-decoration: none;
+    background: #afc43a;
+    overflow: hidden;
+    position: relative;
+}
+
+main section.content .inner ul li .btn_red a:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #73241d;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+}
+
+main section.content .inner ul li .btn_green a:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #667222;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+}
+
+main section.content .inner ul li .btn_red a:hover:before,
+main section.content .inner ul li .btn_green a:hover:before {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+}
+
+main section.content .inner ul li .btn_red a span,
+main section.content .inner ul li .btn_green a span {
+    position: relative;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 0.5em;
+    margin-right: -0.5em;
+}
+
+main section.content .inner ul li .btn_red a img,
+main section.content .inner ul li .btn_green a img {
+    position: absolute;
+    top: 13px;
+    right: 10px;
+    width: 20px;
+    height: 15px;
+}
+
+main section.content .inner .btn_red_site,
+main section.content .inner .btn_green_site {
+    width: 600px;
+    margin: 60px auto 0;
+}
+
+main section.content .inner .btn_red_site a:before,
+main section.content .inner .btn_red_site a:after,
+main section.content .inner .btn_green_site a:before,
+main section.content .inner .btn_green_site a:after {
+    box-sizing: border-box;
+    -webkit-transition: 0.5s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+
+main section.content .inner .btn_red_site a {
+    display: flex;
+    /* 子要素をflexboxで揃える */
+    flex-direction: column;
+    /* 子要素をflexboxにより縦方向に揃える */
+    justify-content: center;
+    /* 子要素をflexboxにより中央に配置する */
+    align-items: center;
+    /* 子要素をflexboxにより中央に配置する */
+    width: 600px;
+    height: 80px;
+    text-decoration: none;
+    background: #be3d30;
+    background-size: 20px 15px;
+    overflow: hidden;
+    position: relative;
+}
+
+main section.content .inner .btn_green_site a {
+    display: flex;
+    /* 子要素をflexboxで揃える */
+    flex-direction: column;
+    /* 子要素をflexboxにより縦方向に揃える */
+    justify-content: center;
+    /* 子要素をflexboxにより中央に配置する */
+    align-items: center;
+    /* 子要素をflexboxにより中央に配置する */
+    width: 600px;
+    height: 80px;
+    text-decoration: none;
+    background: #afc43a;
+    background-size: 20px 15px;
+    overflow: hidden;
+    position: relative;
+}
+
+main section.content .inner .btn_red_site a:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #73241d;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+}
+
+main section.content .inner .btn_green_site a:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #667222;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+}
+
+main section.content .inner .btn_red_site a:hover:before,
+main section.content .inner .btn_green_site a:hover:before {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+}
+
+main section.content .inner .btn_red_site a span,
+main section.content .inner .btn_green_site a span {
+    position: relative;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.5em;
+    margin-right: -0.5em;
+}
+
+section.content .inner .btn_red_site a span strong,
+main section.content .inner .btn_green_site a span strong {
+    font-size: 30px;
+}
+
+main section.content .inner .btn_red_site a img,
+main section.content .inner .btn_green_site a img {
+    position: absolute;
+    top: 33px;
+    right: 20px;
+    width: 20px;
+    height: 15px;
+}
+
+/* Footer */
+/* ------------------------------------------------------------ */
+
+footer {
+    background: #262626;
+    text-align: center;
+}
+
+footer h2 {
+    display: flex;
+    /* 子要素をflexboxで揃える */
+    flex-direction: column;
+    /* 子要素をflexboxにより縦方向に揃える */
+    justify-content: center;
+    /* 子要素をflexboxにより中央に配置する */
+    align-items: center;
+    /* 子要素をflexboxにより中央に配置する */
+    background-color: #1d2b5b;
+    height: 80px;
+}
+
+footer h2 img {
+    width: 250px;
+    height: auto;
+}
+
+footer .inner {
+    width: 980px;
+    margin: auto;
+    padding: 0 0 40px;
+}
+
+footer .inner ul {
+    margin: 20px auto 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .inner ul li {
+    background: #000;
+    text-align: center;
+    width: 280px;
+    margin: 40px 0 0;
+}
+
+footer #copyright {
+    margin-top: 60px;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+}
+
+/* fadein */
+/* ------------------------------------------------------------ */
+
+.fadein {
+    transform: translate(0, 40px);
+    transition: all 700ms;
+    opacity: 0;
+}
+
+/* scrollin */
+/* ------------------------------------------------------------ */
+
+.fadein.scrollin {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+/* トップページに戻るボタン */
+/* ------------------------------------------------------------ */
+
+.pagetop {
+    background: #000;
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+}
+
+.pagetop a {
+    display: block;
+}
+
+}

@@ -1,0 +1,720 @@
+@charset "UTF-8";
+
+/* CSS Information
+---------------------------------------------------------------
+Site URL:http://kurashiki.me/
+File name:common.css
+Summary:base styles
+Created:2020-10-23
+Last update:2020-10-23 by Sadaoka
+Author:	Sadaoka(BUNKASOZOSHA Co.,Ltd.)
+Copyright:(C) BUNKASOZOSHA Co.,Ltd.
+--------------------------------------------------------------- */
+
+@media screen and (max-width: 980px) {
+
+/* Link */
+/* ------------------------------------------------------------ */
+
+a:link,
+a:visited {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover,
+a:active {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.alpha {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.alpha:hover {
+    filter: alpha(opacity=70);
+    opacity: 0.7;
+}
+
+/* Font */
+/* ------------------------------------------------------------ */
+
+em {
+    background-color: #f00;
+    font-style: normal;
+}
+
+sup {
+    font-size: 66%;
+    vertical-align: top;
+}
+
+sub {
+    font-size: 66%;
+    vertical-align: baseline;
+}
+
+/* インデント1文字分 */
+/* ------------------------------------------------------------ */
+
+.indent {
+    text-indent: -1em;
+    margin-left: 1em;
+}
+
+/* Align */
+/* ------------------------------------------------------------ */
+
+.a_left {
+    text-align: left !important;
+}
+
+.a_center {
+    text-align: center !important;
+}
+
+.a_right {
+    text-align: right !important;
+}
+
+/* Float */
+/* ------------------------------------------------------------ */
+
+.f_left {
+    float: left;
+}
+
+.f_right {
+    float: right;
+}
+
+/* Clear */
+/* ------------------------------------------------------------ */
+
+.clfx:after {
+    content: '';
+    height: 0;
+    clear: both;
+    display: block;
+    visibility: hidden;
+}
+
+/* HR */
+/* ------------------------------------------------------------ */
+
+hr {
+    height: 1px;
+    margin: 60px 0;
+    padding: 0;
+    display: block;
+    border: 0;
+    border-top: 1px #e6e6e6 solid;
+}
+
+/* Center合わせ */
+/* ------------------------------------------------------------ */
+
+.c_mgn {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* pc_mode / sp_mode */
+/* ------------------------------------------------------------ */
+
+.pc_mode {
+    display: none;
+}
+
+.sp_mode {
+    display: inline !important;
+}
+
+/* Header */
+/* ------------------------------------------------------------ */
+
+header section.mainvisual {
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../images/mainvisual.jpg);
+}
+
+header section.mainvisual .inner {
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+}
+
+header section.mainvisual h1 {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin: 10px 10px 0 10px;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    text-shadow: 0px 0px 4px #000;
+}
+
+header section.mainvisual .logo {
+    text-align: center;
+    padding: 45vh 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+}
+
+header section.mainvisual .logo img {
+    width: auto;
+    height: 10vh;
+    filter: drop-shadow(0 0 4px #000);
+}
+
+header section.mainvisual .icon {
+    text-align: center;
+    position: absolute;
+    right: 0;
+    bottom: 20px;
+    left: 0;
+    z-index: 2;
+}
+
+header section.mainvisual .icon img {
+    width: 30px;
+    height: 66px;
+    filter: drop-shadow(0 0 4px #000);
+}
+
+header section.mainvisual .animation {
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 1s;
+}
+
+header section.mainvisual .keyframe {
+    animation-name: anim_v;
+}
+
+@keyframes anim_v {
+    0% {
+        transform: translate(0, 0px);
+    }
+    100% {
+        transform: translate(0, -20px);
+    }
+}
+
+header section.content {
+    width: 100%;
+    margin: 0 auto;
+}
+
+header section.content .inner {
+    text-align: center;
+    padding: 60px 10px;
+}
+
+header section.content .inner h3 {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    display: inline-block;
+}
+
+header section.content .inner h3 span {
+    font-size: 18px;
+    font-weight: 600;
+    position: relative;
+    display: block;
+    padding: 10px 0;
+}
+
+header section.content .inner h3 span::after {
+    content: "";
+    background: #000;
+    height: 1px;
+    width: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+header section.content .inner .map {
+    margin: 30px auto 0;
+}
+
+header section.content .inner .map .imgright {
+    float: none;
+    margin: 0 0 15px;
+}
+
+header section.content .inner .map img {
+    width: 80%;
+    height: auto;
+}
+
+header section.content .inner .map .comment {
+    text-align: left;
+    font-size: 14px;
+    line-height: 2;
+    letter-spacing: 0.2em;
+}
+
+/* Main */
+/* ------------------------------------------------------------ */
+
+main section.parallax {
+    height: 240px !important;
+    position: relative;
+    overflow: hidden;
+}
+
+main section.parallax .background {
+    position: absolute;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main section.parallax .bg01 {
+    background-image: url(../images/title_bg_shopping.jpg);
+}
+
+main section.parallax .bg02 {
+    background-image: url(../images/title_bg_cafe.jpg);
+}
+
+main section.parallax .bg03 {
+    background-image: url(../images/title_bg_gourmet.jpg);
+}
+
+main section.parallax .bg04 {
+    background-image: url(../images/title_bg_tourist.jpg);
+}
+
+main section.parallax .bg05 {
+    background-image: url(../images/title_bg_masterpiece.jpg);
+}
+
+main section.parallax .inner {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    height: 240px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main section.parallax .inner h2 {
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: 0.03em;
+    text-shadow: 0px 0px 4px #000;
+}
+
+main section.parallax .inner h2 span {
+    font-size: 18px;
+    font-weight: 600;
+    position: relative;
+    display: block;
+    padding: 10px 0;
+}
+
+main section.parallax .inner h2 span::after {
+    content: "";
+    background: #fff;
+    height: 1px;
+    width: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    filter: drop-shadow(0 0 4px #000);
+}
+
+main section.parallax .inner .catchphrase {
+    -webkit-writing-mode: horizontal-tb;
+    -ms-writing-mode: lr-tb;
+    writing-mode: vhorizontal-tb;
+    position: absolute;
+    bottom: 10px;
+}
+
+main section.parallax .inner .catchphrase_left {}
+
+main section.parallax .inner .catchphrase_right {}
+
+main section.parallax .inner .catchphrase span {
+    background-color: #ecedf1;
+    background-color: rgba(236, 237, 241, 0.7);
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    margin: 5px -0.1em 0 0;
+    padding: 5px 10px;
+    display: inline-block;
+}
+
+main section.content {
+    width: 100%;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+
+main section.content .inner {
+    text-align: center;
+    padding: 0 10px;
+}
+
+main section.content .inner h3 {
+    width: 100px;
+    margin: 0 auto 0;
+}
+
+main section.content .inner h3 img {
+    width: 100%;
+    height: auto;
+}
+
+main section.content .inner ul {
+    margin: 20px auto 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+main section.content .inner ul li {
+    text-align: center;
+    width: 49%;
+    margin: 20px 0 0;
+}
+
+main section.content .inner ul li figure img {
+    width: 100%;
+    height: auto;
+}
+
+main section.content .inner ul li h4 {
+    text-align: center;
+    font-size: 12px;
+    margin: 10px auto;
+}
+
+main section.content .inner ul li .comment {
+    text-align: center;
+    font-size: 10px;
+    line-height: 1.2;
+    margin: 10px auto;
+}
+
+main section.content .inner ul li .btn_red a:before,
+main section.content .inner ul li .btn_red a:after,
+main section.content .inner ul li .btn_green a:before,
+main section.content .inner ul li .btn_green a:after {
+    box-sizing: border-box;
+    -webkit-transition: 0.5s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+
+main section.content .inner ul li .btn_red a {
+    display: flex;
+    /* 子要素をflexboxで揃える */
+    flex-direction: column;
+    /* 子要素をflexboxにより縦方向に揃える */
+    justify-content: center;
+    /* 子要素をflexboxにより中央に配置する */
+    align-items: center;
+    /* 子要素をflexboxにより中央に配置する */
+    width: 100%;
+    height: 40px;
+    text-decoration: none;
+    background: #be3d30;
+    background-size: 20px 15px;
+    overflow: hidden;
+    position: relative;
+}
+
+main section.content .inner ul li .btn_green a {
+    display: flex;
+    /* 子要素をflexboxで揃える */
+    flex-direction: column;
+    /* 子要素をflexboxにより縦方向に揃える */
+    justify-content: center;
+    /* 子要素をflexboxにより中央に配置する */
+    align-items: center;
+    /* 子要素をflexboxにより中央に配置する */
+    width: 100%;
+    height: 40px;
+    text-decoration: none;
+    background: #afc43a;
+    background-size: 20px 15px;
+    overflow: hidden;
+    position: relative;
+}
+
+main section.content .inner ul li .btn_red a:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #73241d;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+}
+
+main section.content .inner ul li .btn_green a:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #667222;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+}
+
+main section.content .inner ul li .btn_red a:hover:before,
+main section.content .inner ul li .btn_green a:hover:before {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+}
+
+main section.content .inner ul li .btn_red a span,
+main section.content .inner ul li .btn_green a span {
+    position: relative;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    margin-right: -0.1em;
+}
+
+main section.content .inner ul li .btn_red a img,
+main section.content .inner ul li .btn_green a img {
+    position: absolute;
+    top: 13px;
+    right: 5px;
+    width: 20px;
+    height: 15px;
+}
+
+main section.content .inner .btn_red_site,
+main section.content .inner .btn_green_site {
+    width: 100%;
+    margin: 30px auto 0;
+}
+
+main section.content .inner .btn_red_site a:before,
+main section.content .inner .btn_red_site a:after,
+main section.content .inner .btn_green_site a:before,
+main section.content .inner .btn_green_site a:after {
+    box-sizing: border-box;
+    -webkit-transition: 0.5s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+
+main section.content .inner .btn_red_site a {
+    display: flex;
+    /* 子要素をflexboxで揃える */
+    flex-direction: column;
+    /* 子要素をflexboxにより縦方向に揃える */
+    justify-content: center;
+    /* 子要素をflexboxにより中央に配置する */
+    align-items: center;
+    /* 子要素をflexboxにより中央に配置する */
+    width: 100%;
+    height: 60px;
+    text-decoration: none;
+    background: #be3d30;
+    overflow: hidden;
+    position: relative;
+}
+
+main section.content .inner .btn_green_site a {
+    display: flex;
+    /* 子要素をflexboxで揃える */
+    flex-direction: column;
+    /* 子要素をflexboxにより縦方向に揃える */
+    justify-content: center;
+    /* 子要素をflexboxにより中央に配置する */
+    align-items: center;
+    /* 子要素をflexboxにより中央に配置する */
+    width: 100%;
+    height: 60px;
+    text-decoration: none;
+    background: #afc43a;
+    overflow: hidden;
+    position: relative;
+}
+
+main section.content .inner .btn_red_site a:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #73241d;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+}
+
+main section.content .inner .btn_green_site a:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #667222;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+}
+
+main section.content .inner .btn_red_site a:hover:before,
+main section.content .inner .btn_green_site a:hover:before {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+}
+
+main section.content .inner .btn_red_site a span,
+main section.content .inner .btn_green_site a span {
+    position: relative;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.1em;
+    margin-right: -0.1em;
+}
+
+section.content .inner .btn_red_site a span strong,
+main section.content .inner .btn_green_site a span strong {
+    font-size: 18px;
+}
+
+main section.content .inner .btn_red_site a img,
+main section.content .inner .btn_green_site a img {
+    position: absolute;
+    top: 23px;
+    right: 5px;
+    width: 20px;
+    height: 15px;
+}
+
+/* Footer */
+/* ------------------------------------------------------------ */
+
+footer {
+    background: #262626;
+    text-align: center;
+}
+
+footer h2 {
+    display: flex;
+    /* 子要素をflexboxで揃える */
+    flex-direction: column;
+    /* 子要素をflexboxにより縦方向に揃える */
+    justify-content: center;
+    /* 子要素をflexboxにより中央に配置する */
+    align-items: center;
+    /* 子要素をflexboxにより中央に配置する */
+    background-color: #1d2b5b;
+    height: 60px;
+}
+
+footer h2 img {
+    width: 150px;
+    height: auto;
+}
+
+footer .inner {
+    width: 100%;
+    margin: auto;
+    padding: 0 0 20px;
+}
+
+footer .inner ul {
+    margin: 10px 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .inner ul li {
+    background: #000;
+    text-align: center;
+    width: 49%;
+    margin: 20px 0 0;
+}
+
+footer .inner ul li img {
+    width: 100%;
+    height: auto;
+}
+
+footer #copyright {
+    margin-top: 30px;
+    font-size: 10px;
+    letter-spacing: 0.1em;
+}
+
+/* fadein */
+/* ------------------------------------------------------------ */
+
+.fadein {
+    transform: translate(0, 40px);
+    transition: all 700ms;
+    opacity: 0;
+}
+
+/* scrollin */
+/* ------------------------------------------------------------ */
+
+.fadein.scrollin {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+/* トップページに戻るボタン */
+/* ------------------------------------------------------------ */
+
+.pagetop {
+    background: #000;
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+}
+
+.pagetop a {
+    display: block;
+}
+
+.pagetop a img {
+    width: 30px;
+    height: auto;
+}
+
+}
