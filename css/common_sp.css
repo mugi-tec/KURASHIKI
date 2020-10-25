@@ -364,7 +364,6 @@ main section.parallax .inner .catchphrase_left {}
 main section.parallax .inner .catchphrase_right {}
 
 main section.parallax .inner .catchphrase span {
-    background-color: #ecedf1;
     background-color: rgba(236, 237, 241, 0.7);
     font-size: 16px;
     letter-spacing: 0.1em;
@@ -447,7 +446,6 @@ main section.content .inner ul li .btn_red a {
     height: 40px;
     text-decoration: none;
     background: #be3d30;
-    background-size: 20px 15px;
     overflow: hidden;
     position: relative;
 }
@@ -465,7 +463,6 @@ main section.content .inner ul li .btn_green a {
     height: 40px;
     text-decoration: none;
     background: #afc43a;
-    background-size: 20px 15px;
     overflow: hidden;
     position: relative;
 }
