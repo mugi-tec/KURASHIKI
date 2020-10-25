@@ -276,51 +276,59 @@ header section.content .inner .map .comment {
 /* Main */
 /* ------------------------------------------------------------ */
 
-main section.parallax {
+main section.title {
     height: 240px !important;
+    position: relative;
+}
+
+main section.title .parallax {
+    height: 240px;
     position: relative;
     overflow: hidden;
 }
 
-main section.parallax .background {
+main section.title .parallax .background {
     position: absolute;
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-main section.parallax .bg01 {
+main section.title .parallax .bg01 {
     background-image: url(../images/title_bg_shopping.jpg);
 }
 
-main section.parallax .bg02 {
+main section.title .parallax .bg02 {
     background-image: url(../images/title_bg_cafe.jpg);
 }
 
-main section.parallax .bg03 {
+main section.title .parallax .bg03 {
     background-image: url(../images/title_bg_gourmet.jpg);
 }
 
-main section.parallax .bg04 {
+main section.title .parallax .bg04 {
     background-image: url(../images/title_bg_tourist.jpg);
 }
 
-main section.parallax .bg05 {
+main section.title .parallax .bg05 {
     background-image: url(../images/title_bg_masterpiece.jpg);
 }
 
-main section.parallax .inner {
+main section.title .inner {
     text-align: center;
     width: 100%;
-    margin: 0 auto;
-    position: relative;
     height: 240px;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-main section.parallax .inner h2 {
+main section.title .inner h2 {
     color: #fff;
     text-align: center;
     font-size: 14px;
@@ -330,15 +338,15 @@ main section.parallax .inner h2 {
     text-shadow: 0px 0px 4px #000;
 }
 
-main section.parallax .inner h2 span {
+main section.title .inner h2 span {
     font-size: 18px;
     font-weight: 600;
     position: relative;
     display: block;
-    padding: 10px 0;
+    padding: 10px 0 15px;
 }
 
-main section.parallax .inner h2 span::after {
+main section.title .inner h2 span::after {
     content: "";
     background: #fff;
     height: 1px;
@@ -351,7 +359,7 @@ main section.parallax .inner h2 span::after {
     filter: drop-shadow(0 0 4px #000);
 }
 
-main section.parallax .inner .catchphrase {
+main section.title .inner .catchphrase {
     -webkit-writing-mode: horizontal-tb;
     -ms-writing-mode: lr-tb;
     writing-mode: vhorizontal-tb;
@@ -359,11 +367,11 @@ main section.parallax .inner .catchphrase {
     bottom: 10px;
 }
 
-main section.parallax .inner .catchphrase_left {}
+main section.title .inner .catchphrase_left {}
 
-main section.parallax .inner .catchphrase_right {}
+main section.title .inner .catchphrase_right {}
 
-main section.parallax .inner .catchphrase span {
+main section.title .inner .catchphrase span {
     background-color: rgba(236, 237, 241, 0.7);
     font-size: 16px;
     letter-spacing: 0.1em;
@@ -375,7 +383,7 @@ main section.parallax .inner .catchphrase span {
 main section.content {
     width: 100%;
     margin: 0 auto;
-    padding: 60px 0;
+    padding: 40px 0 60px;
 }
 
 main section.content .inner {
@@ -653,7 +661,7 @@ footer .inner {
 }
 
 footer .inner ul {
-    margin: 10px 10px 0;
+    margin: 30px 10px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -663,7 +671,12 @@ footer .inner ul li {
     background: #000;
     text-align: center;
     width: 49%;
-    margin: 20px 0 0;
+    margin: 2% 0 0;
+}
+
+footer .inner ul li:nth-child(1),
+footer .inner ul li:nth-child(2) {
+    margin: 0;
 }
 
 footer .inner ul li img {

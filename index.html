@@ -46,7 +46,7 @@
 <body>
 
   <header id="header">
-    <section id="parallax-main" class="mainvisual">
+    <section class="mainvisual">
       <div class="inner">
         <h1>倉敷美観地区のショッピング・グルメ・文化・歴史など地域情報のポータルサイト</h1>
         <h2 class="logo"><img src="images/logo_header.svg" alt="倉敷地域情報"></h2>
@@ -69,8 +69,10 @@
 
   <main>
 
-    <section class="parallax">
-      <div class="background bg01"></div>
+    <section class="title">
+      <div class="parallax">
+        <div class="background bg01"></div>
+      </div>
       <div class="inner">
         <h2>SHOPPING INFORMATION<span>ショッピング情報</span></h2>
         <div class="catchphrase catchphrase_left">
@@ -147,8 +149,10 @@
       </div>
     </section>
 
-    <section class="parallax">
-      <div class="background bg02"></div>
+    <section class="title">
+      <div class="parallax">
+        <div class="background bg02"></div>
+      </div>
       <div class="inner">
         <h2>CAFE INFORMATION<span>カフェ情報</span></h2>
         <div class="catchphrase catchphrase_right">
@@ -225,8 +229,10 @@
       </div>
     </section>
 
-    <section class="parallax">
-      <div class="background bg03"></div>
+    <section class="title">
+      <div class="parallax">
+        <div class="background bg03"></div>
+      </div>
       <div class="inner">
         <h2>GOURMET FOOD INFORMATION<span>グルメ情報</span></h2>
         <div class="catchphrase catchphrase_left">
@@ -303,8 +309,10 @@
       </div>
     </section>
 
-    <section class="parallax">
-      <div class="background bg04"></div>
+    <section class="title">
+      <div class="parallax">
+        <div class="background bg04"></div>
+      </div>
       <div class="inner">
         <h2>TOURIST ATTRACTIONS INFORMATION<span>観光スポット情報</span></h2>
         <div class="catchphrase catchphrase_right">
@@ -375,8 +383,10 @@
       </div>
     </section>
 
-    <section class="parallax">
-      <div class="background bg05"></div>
+    <section class="title">
+      <div class="parallax">
+        <div class="background bg05"></div>
+      </div>
       <div class="inner">
         <h2>FAMOUS FOOD / MASTERPIECE INFORMATION<span>名物・名品情報</span></h2>
         <div class="catchphrase catchphrase_left">
@@ -487,8 +497,8 @@
   <script src="js/common.js?date=20201024"></script>
   <script src="js/parlx.js"></script>
   <script>
-    $('section.parallax').Parlx({
-      item: 'section.parallax .background',
+    $('section.title').Parlx({
+      item: 'section.title .background',
       speed: '0.5',
       height: '480px',
       mobile: true
