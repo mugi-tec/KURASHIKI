@@ -237,7 +237,7 @@ header section.content .inner h3 span {
     font-weight: 600;
     position: relative;
     display: block;
-    padding: 10px 0;
+    padding: 10px 0 15px;
 }
 
 header section.content .inner h3 span::after {
