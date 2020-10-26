@@ -667,7 +667,7 @@ footer .inner ul li {
     margin: 40px 0 0;
 }
 
-footer #copyright {
+footer .copyright {
     margin-top: 60px;
     font-size: 12px;
     letter-spacing: 0.1em;
