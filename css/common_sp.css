@@ -227,7 +227,7 @@ main section.introduction .inner {
     padding: 60px 10px;
 }
 
-main section.introduction .inner h3 {
+main section.introduction .inner h2 {
     text-align: center;
     font-size: 14px;
     font-weight: 600;
@@ -235,7 +235,7 @@ main section.introduction .inner h3 {
     display: inline-block;
 }
 
-main section.introduction .inner h3 span {
+main section.introduction .inner h2 span {
     font-size: 18px;
     font-weight: 600;
     position: relative;
@@ -243,7 +243,7 @@ main section.introduction .inner h3 span {
     padding: 10px 0 15px;
 }
 
-main section.introduction .inner h3 span::after {
+main section.introduction .inner h2 span::after {
     content: "";
     background: #000;
     height: 1px;
