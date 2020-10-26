@@ -176,7 +176,7 @@ header section.mainvisual .logo {
 header section.mainvisual .logo img {
     width: auto;
     height: 20vh;
-    filter: drop-shadow(0 0 4px #000);
+    filter: drop-shadow(1px 1px 3px #000) drop-shadow(1px -1px 3px #000) drop-shadow(-1px 1px 3px #000) drop-shadow(-1px -1px 3px #000);
 }
 
 header section.mainvisual .icon {
