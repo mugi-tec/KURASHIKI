@@ -6,7 +6,7 @@ Site URL:http://kurashiki.me/
 File name:common.css
 Summary:base styles
 Created:2020-10-23
-Last update:2020-10-23 by Sadaoka
+Last update:2020-10-26 by Sadaoka
 Author:	Sadaoka(BUNKASOZOSHA Co.,Ltd.)
 Copyright:(C) BUNKASOZOSHA Co.,Ltd.
 --------------------------------------------------------------- */
@@ -214,17 +214,20 @@ header section.mainvisual .keyframe {
     }
 }
 
-header section.content {
+/* Main */
+/* ------------------------------------------------------------ */
+
+main section.introduction {
     width: 100%;
     margin: 0 auto;
 }
 
-header section.content .inner {
+main section.introduction .inner {
     text-align: center;
     padding: 60px 10px;
 }
 
-header section.content .inner h3 {
+main section.introduction .inner h3 {
     text-align: center;
     font-size: 14px;
     font-weight: 600;
@@ -232,7 +235,7 @@ header section.content .inner h3 {
     display: inline-block;
 }
 
-header section.content .inner h3 span {
+main section.introduction .inner h3 span {
     font-size: 18px;
     font-weight: 600;
     position: relative;
@@ -240,7 +243,7 @@ header section.content .inner h3 span {
     padding: 10px 0 15px;
 }
 
-header section.content .inner h3 span::after {
+main section.introduction .inner h3 span::after {
     content: "";
     background: #000;
     height: 1px;
@@ -252,29 +255,26 @@ header section.content .inner h3 span::after {
     transform: translateX(-50%);
 }
 
-header section.content .inner .map {
+main section.introduction .inner .map {
     margin: 30px auto 0;
 }
 
-header section.content .inner .map .imgright {
+main section.introduction .inner .map .imgright {
     float: none;
     margin: 0 0 15px;
 }
 
-header section.content .inner .map img {
+main section.introduction .inner .map img {
     width: 80%;
     height: auto;
 }
 
-header section.content .inner .map .comment {
+main section.introduction .inner .map .comment {
     text-align: left;
     font-size: 14px;
     line-height: 2;
     letter-spacing: 0.2em;
 }
-
-/* Main */
-/* ------------------------------------------------------------ */
 
 main section.title {
     height: 240px !important;
