@@ -360,16 +360,9 @@ main section.title .inner h2 span::after {
 }
 
 main section.title .inner .catchphrase {
-    -webkit-writing-mode: horizontal-tb;
-    -ms-writing-mode: lr-tb;
-    writing-mode: vhorizontal-tb;
     position: absolute;
     bottom: 10px;
 }
-
-main section.title .inner .catchphrase_left {}
-
-main section.title .inner .catchphrase_right {}
 
 main section.title .inner .catchphrase span {
     background-color: rgba(236, 237, 241, 0.7);
