@@ -147,7 +147,14 @@ header section.mainvisual {
 header section.mainvisual .inner {
     margin: 0 auto;
     position: relative;
+    /* 子要素をflexboxで揃える */
     display: flex;
+    /* 子要素をflexboxにより縦方向に揃える */
+    flex-direction: column;
+    /* 子要素をflexboxにより左右中央に配置する */
+    justify-content: center;
+    /* 子要素をflexboxにより上下中央に配置する */
+    align-items: center;
 }
 
 header section.mainvisual h1 {
@@ -157,20 +164,14 @@ header section.mainvisual h1 {
     line-height: 1.2;
     margin: 30px 0 0 30px;
     position: absolute;
+    top: 0;
     left: 0;
-    z-index: 1;
     text-shadow: 0px 0px 4px #000;
 }
 
 header section.mainvisual .logo {
     text-align: center;
     padding: 40vh 0;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 0;
 }
 
 header section.mainvisual .logo img {
@@ -185,7 +186,6 @@ header section.mainvisual .icon {
     right: 0;
     bottom: 30px;
     left: 0;
-    z-index: 2;
 }
 
 header section.mainvisual .icon img {

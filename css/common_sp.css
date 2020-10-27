@@ -147,30 +147,31 @@ header section.mainvisual {
 header section.mainvisual .inner {
     margin: 0 auto;
     position: relative;
+    /* 子要素をflexboxで揃える */
     display: flex;
+    /* 子要素をflexboxにより縦方向に揃える */
+    flex-direction: column;
+    /* 子要素をflexboxにより左右中央に配置する */
+    justify-content: center;
+    /* 子要素をflexboxにより上下中央に配置する */
+    align-items: center;
 }
 
 header section.mainvisual h1 {
     color: #fff;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 600;
     line-height: 1.2;
     margin: 10px 10px 0 10px;
     position: absolute;
+    top: 0;
     left: 0;
-    z-index: 1;
     text-shadow: 0px 0px 4px #000;
 }
 
 header section.mainvisual .logo {
     text-align: center;
     padding: 45vh 0;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 0;
 }
 
 header section.mainvisual .logo img {
@@ -185,7 +186,6 @@ header section.mainvisual .icon {
     right: 0;
     bottom: 20px;
     left: 0;
-    z-index: 2;
 }
 
 header section.mainvisual .icon img {
@@ -435,14 +435,14 @@ main section.content .inner ul li .btn_green a:after {
 }
 
 main section.content .inner ul li .btn_red a {
-    display: flex;
     /* 子要素をflexboxで揃える */
-    flex-direction: column;
+    display: flex;
     /* 子要素をflexboxにより縦方向に揃える */
+    flex-direction: column;
+    /* 子要素をflexboxにより左右中央に配置する */
     justify-content: center;
-    /* 子要素をflexboxにより中央に配置する */
+    /* 子要素をflexboxにより上下中央に配置する */
     align-items: center;
-    /* 子要素をflexboxにより中央に配置する */
     width: 100%;
     height: 40px;
     text-decoration: none;
@@ -452,14 +452,14 @@ main section.content .inner ul li .btn_red a {
 }
 
 main section.content .inner ul li .btn_green a {
-    display: flex;
     /* 子要素をflexboxで揃える */
-    flex-direction: column;
+    display: flex;
     /* 子要素をflexboxにより縦方向に揃える */
+    flex-direction: column;
+    /* 子要素をflexboxにより左右中央に配置する */
     justify-content: center;
-    /* 子要素をflexboxにより中央に配置する */
+    /* 子要素をflexboxにより上下中央に配置する */
     align-items: center;
-    /* 子要素をflexboxにより中央に配置する */
     width: 100%;
     height: 40px;
     text-decoration: none;
@@ -533,14 +533,14 @@ main section.content .inner .btn_green_site a:after {
 }
 
 main section.content .inner .btn_red_site a {
-    display: flex;
     /* 子要素をflexboxで揃える */
-    flex-direction: column;
+    display: flex;
     /* 子要素をflexboxにより縦方向に揃える */
+    flex-direction: column;
+    /* 子要素をflexboxにより左右中央に配置する */
     justify-content: center;
-    /* 子要素をflexboxにより中央に配置する */
+    /* 子要素をflexboxにより上下中央に配置する */
     align-items: center;
-    /* 子要素をflexboxにより中央に配置する */
     width: 100%;
     height: 60px;
     text-decoration: none;
@@ -550,14 +550,14 @@ main section.content .inner .btn_red_site a {
 }
 
 main section.content .inner .btn_green_site a {
-    display: flex;
     /* 子要素をflexboxで揃える */
-    flex-direction: column;
+    display: flex;
     /* 子要素をflexboxにより縦方向に揃える */
+    flex-direction: column;
+    /* 子要素をflexboxにより左右中央に配置する */
     justify-content: center;
-    /* 子要素をflexboxにより中央に配置する */
+    /* 子要素をflexboxにより上下中央に配置する */
     align-items: center;
-    /* 子要素をflexboxにより中央に配置する */
     width: 100%;
     height: 60px;
     text-decoration: none;
@@ -630,14 +630,14 @@ footer {
 }
 
 footer h2 {
-    display: flex;
     /* 子要素をflexboxで揃える */
-    flex-direction: column;
+    display: flex;
     /* 子要素をflexboxにより縦方向に揃える */
+    flex-direction: column;
+    /* 子要素をflexboxにより左右中央に配置する */
     justify-content: center;
-    /* 子要素をflexboxにより中央に配置する */
+    /* 子要素をflexboxにより上下中央に配置する */
     align-items: center;
-    /* 子要素をflexboxにより中央に配置する */
     background-color: #1d2b5b;
     height: 60px;
 }
