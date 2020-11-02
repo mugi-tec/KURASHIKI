@@ -272,8 +272,8 @@ main section.introduction .inner .map img {
 main section.introduction .inner .map .comment {
     text-align: left;
     font-size: 14px;
-    line-height: 2;
-    letter-spacing: 0.2em;
+    line-height: 1.7;
+    letter-spacing: 0.1em;
 }
 
 main section.title {

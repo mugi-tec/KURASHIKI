@@ -10,7 +10,6 @@
 //TOPメインの縦サイズをブラウザーの高さに合わせる
 $(function() {
   var $innerHeight=window.innerHeight;
-  $('header section.mainvisual .parallax-container').css('height', $(window).innerHeight()+'px');
   $('header section.mainvisual .inner').css('height', $(window).innerHeight()+'px');
 });
 

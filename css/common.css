@@ -266,9 +266,8 @@ main section.introduction .inner .map .imgright {
 
 main section.introduction .inner .map .comment {
     text-align: left;
-    font-size: 18px;
     line-height: 2;
-    letter-spacing: 0.2em;
+    letter-spacing: 0.1em;
 }
 
 main section.title {
