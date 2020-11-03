@@ -232,6 +232,7 @@ main section.introduction .inner h2 {
     font-size: 18px;
     font-weight: 600;
     letter-spacing: 0.03em;
+    margin-right: -0.03em;
     display: inline-block;
 }
 
@@ -267,7 +268,6 @@ main section.introduction .inner .map .imgright {
 main section.introduction .inner .map .comment {
     text-align: left;
     line-height: 2;
-    letter-spacing: 0.1em;
 }
 
 main section.title {
@@ -328,6 +328,7 @@ main section.title .inner h2 {
     font-weight: 600;
     line-height: 1;
     letter-spacing: 0.03em;
+    margin-right: -0.03em;
     text-shadow: 0px 0px 4px #000;
 }
 
@@ -371,7 +372,6 @@ main section.title .inner .catchphrase_right {
 main section.title .inner .catchphrase span {
     background-color: #ecedf1;
     font-size: 24px;
-    letter-spacing: 0.1em;
     margin: 0 10px -0.1em;
     padding: 20px 15px;
     display: inline-block;
@@ -413,14 +413,12 @@ main section.content .inner ul li {
 main section.content .inner ul li h4 {
     text-align: center;
     font-size: 16px;
-    letter-spacing: 0.1em;
     margin: 10px auto;
 }
 
 main section.content .inner ul li .comment {
     text-align: center;
     font-size: 12px;
-    letter-spacing: 0.1em;
     margin: 10px auto;
 }
 
@@ -669,7 +667,6 @@ footer .inner ul li {
 footer .copyright {
     margin-top: 60px;
     font-size: 12px;
-    letter-spacing: 0.1em;
 }
 
 /* fadein */
