@@ -289,23 +289,23 @@ main section.title .parallax .background {
 }
 
 main section.title .parallax .bg01 {
-    background-image: url(../images/title_bg_shopping.jpg);
+    background-image: url(../images/title_shopping.jpg);
 }
 
 main section.title .parallax .bg02 {
-    background-image: url(../images/title_bg_cafe.jpg);
+    background-image: url(../images/title_cafe.jpg);
 }
 
 main section.title .parallax .bg03 {
-    background-image: url(../images/title_bg_gourmet.jpg);
+    background-image: url(../images/title_gourmet.jpg);
 }
 
 main section.title .parallax .bg04 {
-    background-image: url(../images/title_bg_tourist.jpg);
+    background-image: url(../images/title_tourist.jpg);
 }
 
 main section.title .parallax .bg05 {
-    background-image: url(../images/title_bg_masterpiece.jpg);
+    background-image: url(../images/title_masterpiece.jpg);
 }
 
 main section.title .inner {
