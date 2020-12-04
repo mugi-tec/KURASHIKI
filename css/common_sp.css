@@ -189,8 +189,8 @@ header section.mainvisual .icon {
 }
 
 header section.mainvisual .icon img {
-    width: 30px;
-    height: 66px;
+    width: 15px;
+    height: auto;
     filter: drop-shadow(0 0 4px #000);
 }
 
